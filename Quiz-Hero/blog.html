@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <h3 class="text-center my-5 font-bold text-4xl text-orange-500 underline">Welcome to the blog</h3>
+    </header>
+    <main class="mt-2">
+        <p class="container px-3 mx-auto text-lg font-semibold my-2"><span class="text-2xl  font-mono  text-orange-400">1. What is the difference between map, filter, foreach, find?</span><br>Ans: map() executes the same code on every element in an array and returns a new array with the updated elements. filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria. forEach(), is used to execute the same code on every element in an array but does not change the array and it returns undefined.find() is used to select a single element from an array.</p>
+        <p class="container px-3 mx-auto text-lg font-semibold my-2"><span class="text-2xl  font-mono text-orange-400">2. What is the difference between local storage,session storage and cookies?</span><br>Ans: Local storage is the most recent mechanism. It allows for larger amounts of data to be stored, but the data is not deleted when the browser is closed. Local storage is useful for storing data that the user will need to access later, such as offline data.Session storage is similar to cookies, but the data is only stored for the current session. This means that the data will be deleted when the user closes the browser. Session storage is useful for storing data that is sensitive, such as login credentials.Cookies are the oldest and most well-known mechanism. They are simple to use and well supported by browsers. </p>
+        <p class="container px-3 mx-auto text-lg font-semibold my-2"><span class="text-2xl  font-mono  text-orange-400">3.What is Event loop and how it works?</span><br>Ans: The event loop is the secret behind JavaScript's asynchronous programming. The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.</p>
+        <p class="container px-3 mx-auto text-lg font-semibold my-2"><span class="text-2xl font-mono  text-orange-400">4. What is the work of function quizTimer?</span><br>Ans: Here quizTimer function sets up a timer using setInterval() method to display the countdown time on the web page for quiz.It takes a single boolean parameter dismiss, which is used to clear the interval when set to true. It is used to manage the countdown timer for a quiz and update the UI with the remaining time.</p>
+        <p class="container px-3 mx-auto text-lg font-semibold my-2"><span class="text-2xl  text-orange-400">5. What is the work of function chooseQuiz</span><br>Ans: Here chooseQuiz function is called when the user selects an answer for a particular quiz question in the website. The function takes two parameters index and givenAns. The function checks if there is an existing answer for the quiz question. If an answer exists for the quiz question, the function updates the answer with the new answer chosen by the user. If an answer does not exist for the quiz question, the function adds a new object to the answers array containing the quiz question and the answer chosen by the user.</p>
+    </main>
+</body>
+</html>
